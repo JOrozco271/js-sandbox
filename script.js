@@ -4,5 +4,12 @@ colorSelect.onchange = function () {
     document.getElementById("colorBox").style = `background-color: ${colorSelect.value};`;
 }
 function toggleDarkMode(){
-    alert("Toggle ME")
+    let content = document.getElementById("content")
+    content.classList.toggle("dark-mode")
+    //alert("Toggle ME")
+}
+function teleportButton(){
+    console.log("teleport");
+    let runaway = document.getElementById("runaway");
+    runaway.innerText = "Dont Touch ME!";
 }
